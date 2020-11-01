@@ -10,14 +10,20 @@
     height: auto;
     width: 100%;
     text-align: center;
-    background-color: #aa00ff;
+    /* background-color: #aa00ff; */
+    background-color: #fff;
     border-radius: 8px;
     text-align: center;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 
 .block {
-    height: 300px;
-    width: auto;
+    height: 260px;
+    width: 100%;
+}
+
+.sblock {
+    height: 80px;
+    width: 100%;
 }
