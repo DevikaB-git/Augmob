@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/home.css">
+
+    <script>
+        function myFunction() {
+            console.log("1");
+            var x = document.getElementById("1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction2() {
+            console.log("2");
+            var x = document.getElementById("2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction3() {
+            console.log("3");
+            var x = document.getElementById("3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction4() {
+            console.log("4");
+            var x = document.getElementById("4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function myFunction5() {
+            console.log("5");
+            var x = document.getElementById("5");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myFunction6() {
+            console.log("6");
+            var x = document.getElementById("6");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit" onClick="myFunction()">
+                        One
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit" onClick="myFunction2()">
+                        Two
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit" onClick="myFunction3()">
+                        Three
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit" onClick="myFunction4()">
+                        Four
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit" onClick="myFunction5()">
+                        Five
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit" onClick="myFunction5()">
+                        Six
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <section id="all">
+        <div class="container px-5 mt-5" id="1">
+            <div class="row">
+                <div class="col color block">person 1</div>
+            </div>
+        </div>
+
+        <div class="container px-5 mt-5" id="2">
+            <div class="row">
+                <div class="col color mr-3 block">person 1</div>
+                <div class="col color ml-3 block">person 2</div>
+            </div>
+        </div>
+
+        <div class="container px-5 mt-5" id="3">
+            <div class="row">
+                <div class="col color">person 1</div>
+                <div class="col">
+                    <div class="row mb-3 ml-3">
+                        <div class="col color block">person 2</div>
+                    </div>
+                    <div class="row ml-3">
+                        <div class="col color block">person 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-5 mt-5" id="4">
+            <div class="row mb-3">
+                <div class="col color mr-3 block">person 1</div>
+                <div class="col color ml-3 block">person 2</div>
+            </div>
+            <div class="row">
+                <div class="col color mr-3 block">person 3</div>
+                <div class="col color ml-3 block">person 4</div>
+            </div>
+        </div>
+
+        <div class="container px-5 mt-5" id="5">
+            <div class="row">
+                <div class="col color mr-3">person 1</div>
+                <div class="col">
+                    <div class="row mb-3">
+                        <div class="col color mr-3 block">person 2</div>
+                        <div class="col color mr-3 block">person 3</div>
+                    </div>
+                    <div class="row">
+                        <div class="col color mr-3 block">person 4</div>
+                        <div class="col color mr-3 block">person 5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-5 mt-5" id="6">
+            <div class="row">
+                <div class="col color mr-3">person 1</div>
+                <div class="col">
+                    <div class="row mb-3">
+                        <div class="col color mr-3 block">person 2</div>
+                        <div class="col color mr-3 block">person 3</div>
+                    </div>
+                    <div class="row">
+                        <div class="col color mr-3 block">person 4</div>
+                        <div class="col color mr-3 block">person 5</div>
+                    </div>
+                    <div class="row">
+                        <div class="col color mr-3 mt-5 block">person 4</div>
+                        <div class="col color mr-3 mt-5 block">person 5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
