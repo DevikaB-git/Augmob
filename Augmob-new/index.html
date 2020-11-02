@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <style>
+        #myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+
+.color {
+  height: auto;
+  width: 100%;
+  text-align: center;
+  /* background-color: #aa00ff; */
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  color: #000;
+  text-align: center;
+}
+
+.block {
+  height: 260px;
+  width: 100%;
+}
+
+.sblock {
+  height: 80px;
+  width: 100%;
+}
+.hh {
+  margin-top: 130px;
+  height: 150px;
+}
+.hh1 {
+  height: 150px;
+}
+.hh2 {
+  height: 600px;
+}
+.per {
+  margin-top: 50px;
+  height: 150px;
+}
+.per1 {
+  height: 150px;
+}
+.per2 {
+  height: 150px;
+}
+
+        </style>
+    <script>
+        // function myFunction(val) {
+        //   console.log(val);
+        //   var x = document.getElementById(val);
+        //   if (x.style.display === "none") {
+        //     x.style.display = "block";
+        //   } else {
+        //     x.style.display = "none";
+        //   }
+        // }
+
+        var divs = [
+            "1person",
+            "2persons",
+            "3persons",
+            "4persons",
+            "5persons",
+            "18persons",
+        ];
+        var visibleDivId = null;
+        function myFunction(divId) {
+            if (visibleDivId === divId) {
+                //visibleDivId = null;
+            } else {
+                visibleDivId = divId;
+            }
+            hideNonVisibleDivs();
+        }
+        function hideNonVisibleDivs() {
+            var i, divId, div;
+            for (i = 0; i < divs.length; i++) {
+                divId = divs[i];
+                div = document.getElementById(divId);
+                if (visibleDivId === divId) {
+                    div.style.display = "block";
+                } else {
+                    div.style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Chat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit"
+                        onClick="myFunction('1person');" value="1">
+                        One
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit"
+                        onClick="myFunction('2persons');" value="2">
+                        Two
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit"
+                        onClick="myFunction('3persons');" value="3">
+                        Three
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit"
+                        onClick="myFunction('4persons');" value="4">
+                        Four
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit"
+                        onClick="myFunction('5persons');" value="5">
+                        Five
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-outline-light my-2 my-sm-0 mx-2" type="submit"
+                        onClick="myFunction('18persons');" value="18">
+                        etc
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</head>
+
+<body>
+    <section id="all">
+        <div class="container color shadow my-5" id="1person">
+            <div class="row">
+                <div class="col block d-flex justify-content-center align-items-center">
+                    person 1
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5" id="2persons">
+            <div class="row">
+                <div class="col color shadow mr-3 block d-flex justify-content-center align-items-center">
+                    person 1
+                </div>
+                <div class="col color shadow ml-3 block d-flex justify-content-center align-items-center">
+                    person 2
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5" id="3persons">
+            <div class="row">
+                <div class="col color shadow d-flex justify-content-center align-items-center hh2">
+                    person 1
+                </div>
+                <div class="col">
+                    <div class="row mb-3 ml-3">
+                        <div class="col color shadow block d-flex justify-content-center align-items-center hh">
+                            person 2
+                        </div>
+                    </div>
+                    <div class="row ml-3">
+                        <div class="col color shadow block d-flex justify-content-center align-items-center hh1">
+                            person 3
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5" id="4persons">
+            <div class="row">
+                <div class="col color shadow d-flex justify-content-center align-items-center hh2">
+                    person 1
+                </div>
+                <div class="col">
+                    <div class="row ml-3">
+                        <div class="col mb-3 color shadow block d-flex justify-content-center align-items-center per">
+                            person 2
+                        </div>
+                    </div>
+                    <div class="row ml-3">
+                        <div class="col mb-3 color shadow block d-flex justify-content-center align-items-center per1">
+                            person 3
+                        </div>
+                    </div>
+                    <div class="row ml-3">
+                        <div class="col mb-3 color shadow block d-flex justify-content-center align-items-center per2">
+                            person 4
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5" id="5persons">
+            <div class="row">
+                <div class="col color shadow mr-3 d-flex justify-content-center align-items-center hh2">
+                    person 1
+                </div>
+                <div class="col">
+                    <div class="row mb-3">
+                        <div class="col color shadow mr-3 block d-flex justify-content-center align-items-center hh">
+                            person 2
+                        </div>
+                        <div class="col color shadow mr-3 block d-flex justify-content-center align-items-center hh">
+                            person 3
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col color shadow mr-3 block d-flex justify-content-center align-items-center hh1">
+                            person 4
+                        </div>
+                        <div class="col color shadow mr-3 block d-flex justify-content-center align-items-center hh1">
+                            person 5
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-5" id="18persons">
+            <div class="row">
+                <div class="col color shadow mr-5 d-flex justify-content-center align-items-center">
+                    person 1
+                </div>
+                <div class="col">
+                    <div class="row mb-3 d-flex justify-content-between">
+                        <div class="col-3 mr-2 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 2
+                        </div>
+                        <div class="col-3 mr-2 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 3
+                        </div>
+                        <div class="col-3 mr-0 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 4
+                        </div>
+                    </div>
+                    <div class="row mb-3 d-flex justify-content-between">
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 4
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 5
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 6
+                        </div>
+                    </div>
+                    <div class="row mb-3 d-flex justify-content-between">
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 7
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 8
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 9
+                        </div>
+                    </div>
+                    <div class="row mb-3 d-flex justify-content-between">
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 10
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 11
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 12
+                        </div>
+                    </div>
+                    <div class="row mb-3 d-flex justify-content-between">
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 13
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 14
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 15
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 16
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 17
+                        </div>
+                        <div class="col-3 color shadow sblock d-flex justify-content-center align-items-center">
+                            person 18
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
