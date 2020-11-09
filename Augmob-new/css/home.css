@@ -28,17 +28,15 @@
   width: 100%;
 }
 .hh {
-  margin-top: 130px;
   height: 150px;
 }
 .hh1 {
   height: 150px;
 }
 .hh2 {
-  height: 600px;
+  height: 450px;
 }
 .per {
-  margin-top: 50px;
   height: 150px;
 }
 .per1 {
@@ -46,4 +44,7 @@
 }
 .per2 {
   height: 150px;
+}
+.per3 {
+  height: 600px;
 }
